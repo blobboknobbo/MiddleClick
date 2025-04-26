@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Image Page</title>
-  <script>
-    // Open the other URL as soon as the page loads
-    window.onload = function() {
-      window.open('https://github.com/blobboknobbo', '_blank');
-    };
-  </script>
-  <style>
-    /* Remove margins/padding so it's just the image */
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // Redirect after a delay or instantly when the page loads
+        setTimeout(function() {
+            window.location.href = 'https://github.com/blobboknobbo'; // Your target URL
+        }, 0); // Change '0' to any number to delay the redirect (in milliseconds)
+    </script>
+    <title>Redirecting Page</title>
 </head>
 <body>
-  <img src="https://blobboknobbo.github.io/MiddleClick/images/moonlord.png" alt="Image" style="max-width:100%; height:auto;">
+    <!-- Embed your image here -->
+    <img src="https://blobboknobbo.github.io/MiddleClick/images/moonlord.png" alt="Embedded Image" style="max-width:100%; height:auto;">
 </body>
 </html>
