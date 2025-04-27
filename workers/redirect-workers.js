@@ -35,6 +35,8 @@ export default {
 
               <input type="submit" value="Generate Redirect Link" />
             </form>
+
+            <p style="margin-top: 50px; font-size: 12px;">Credit: <a href="https://github.com/blobboknobbo" target="_blank">github.com/blobboknobbo</a></p>
           </body>
         </html>
       `, { headers: { "Content-Type": "text/html" } });
@@ -46,7 +48,7 @@ export default {
       const imageUrl = url.searchParams.get("imageUrl") || "";
 
       // Build the full generated link
-      let generatedLink = `https://INSERT-WORKER-LINK/image.jpg?target=${encodeURIComponent(targetUrl)}`;
+      let generatedLink = `INSERT-WORKER-LINK/image.jpg?target=${encodeURIComponent(targetUrl)}`;
       if (imageUrl.trim() !== "") {
         generatedLink += `&image=${encodeURIComponent(imageUrl)}`;
       }
@@ -59,6 +61,8 @@ export default {
             <p><code>${generatedLink}</code></p>
             <p>When this link is opened, it will redirect you to:<br>${targetUrl}</p>
             <p><a href="/">Back to Generator</a></p>
+
+            <p style="margin-top: 50px; font-size: 12px;">Credit: <a href="https://github.com/blobboknobbo" target="_blank">github.com/blobboknobbo</a></p>
           </body>
         </html>
       `, { headers: { "Content-Type": "text/html" } });
@@ -67,7 +71,7 @@ export default {
     // Handle serving the image and redirect logic
     if (url.pathname === "/image.jpg" && url.searchParams.has("target")) {
       let targetUrl = url.searchParams.get("target");
-      let imageUrl = url.searchParams.get("image") || "INSERT DEFAULT IMAGE";
+      let imageUrl = url.searchParams.get("image") || "https://raw.githubusercontent.com/blobboknobbo/MiddleClick/main/images/moonlord.jpg";
 
       // Add https:// automatically if missing (unless it's a special scheme)
       if (!/^[a-zA-Z][a-zA-Z\d+\-.]*:\/\//.test(targetUrl)) {
