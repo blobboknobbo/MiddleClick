@@ -5,11 +5,11 @@ This is a simple project that allows users to create links to **embed images** (
 ## How it works
 - Bots like Discord are provided a preview of the image **(embeding it)**.
 - Real users who middle click the image are instantly redirected to **your chosen URL**.
-- The generated link appear like an **image link**; this allows it to be properly embedded.
+- The generated link appears as an **image link**; this allows it to be properly embedded.
 - Able to upload **custom images**, as well as having an **automatic default**.
 
 ## Hosted Example
-Try it live:  [middleclick.blobboknobbo.workers.dev](https://.middleclick.blobboknobbo.workers.dev)
+Try it live:  [middleclick.blobboknobbo.workers.dev](https://middleclick.blobboknobbo.workers.dev)
 
 ## Files
 - 'workers/redirect-worker.js' -Cloudflare Worker script handling **Link Generation**, **Image Embedding**, and **User Redirection**.
