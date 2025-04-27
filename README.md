@@ -5,7 +5,7 @@ This is a simple project that allows users to create links to **embed images** (
 ## How it works
 - Bots like Discord are provided a preview of the image **(embeding it)**.
 - Real users who middle click the image are instantly redirected to **your chosen URL**.
-- Makes link appear like an **image link**; this allows it to be properly embedded.
+- The generated link appear like an **image link**; this allows it to be properly embedded.
 - Able to upload **custom images**, as well as having an **automatic default**.
 
 ## Hosted Example
